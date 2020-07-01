@@ -14,6 +14,12 @@
       "title": "Description of the project model",
       "type": "string",
       "minLength": 1
+    },
+    ":locales": {
+      "title": "Optional list of locales (the first is the default)",
+      "type": "array",
+      "items": {"type": "string", "pattern": "^[a-zA-Z][a-zA-Z0-9-_.]*$"},
+      "minItems": 1
     }
   },
   "patternProperties": {
