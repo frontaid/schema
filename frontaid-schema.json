@@ -106,7 +106,8 @@
       "properties": {
         ":name": {"type": "string"},
         ":description": {"type": "string"},
-        ":type": {"const": "line"}
+        ":type": {"const": "line"},
+        ":richtext": {"type": "boolean"}
       },
       "required": [":type"],
       "additionalProperties": false
@@ -118,7 +119,8 @@
       "properties": {
         ":name": {"type": "string"},
         ":description": {"type": "string"},
-        ":type": {"const": "text"}
+        ":type": {"const": "text"},
+        ":richtext": {"type": "boolean"}
       },
       "required": [":type"],
       "additionalProperties": false
