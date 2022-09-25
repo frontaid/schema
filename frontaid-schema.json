@@ -57,7 +57,8 @@
         {"$ref": "#/definitions/object"},
         {"$ref": "#/definitions/listObject"},
         {"$ref": "#/definitions/line"},
-        {"$ref": "#/definitions/text"}
+        {"$ref": "#/definitions/text"},
+        {"$ref": "#/definitions/image"}
       ]
     },
 
@@ -121,6 +122,18 @@
         ":description": {"type": "string"},
         ":type": {"const": "text"},
         ":richtext": {"type": "boolean"}
+      },
+      "required": [":type"],
+      "additionalProperties": false
+    },
+
+    "image": {
+      "title": "Image field",
+      "type": "object",
+      "properties": {
+        ":name": {"type": "string"},
+        ":description": {"type": "string"},
+        ":type": {"const": "image"}
       },
       "required": [":type"],
       "additionalProperties": false
